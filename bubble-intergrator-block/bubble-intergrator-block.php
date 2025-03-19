@@ -1,10 +1,19 @@
 <?php
 /**
- * Plugin Name: Bubble Integrator
- * Description: A custom block to integrate Bubble iframe.
- * Version: 1.0
- * Author: STINGRAY82
- */
+ * Plugin Name:       Bubble Integrator
+ * Tested up to:      6.7.2
+ * Description:       A custom block to integrate Bubble iframe.
+ * Requires at least: 6.5
+ * Requires PHP:      7.4
+ * Version:           1.0
+ * Author:            STINGRAY82
+ * Author URI:        https://reallyusefulplugins.com
+ * License:           GPL-2.0-or-later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       bubble-intergrator-block
+ * Website:           https://reallyusefulplugins.com
+ * */
+
 function bubble_integrator_block_init() {
     ?>
     <script type="text/javascript">
