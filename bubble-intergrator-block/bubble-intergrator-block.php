@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name:       Bubble Integrator
- * Tested up to:      6.7.2
+ * Tested up to:      6.8.1
  * Description:       A custom block to integrate Bubble iframe.
  * Requires at least: 6.5
- * Requires PHP:      7.4
- * Version:           1.0
+ * Requires PHP:      8.0
+ * Version:           1.01
  * Author:            STINGRAY82
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL-2.0-or-later
@@ -13,6 +13,7 @@
  * Text Domain:       bubble-intergrator-block
  * Website:           https://reallyusefulplugins.com
  * */
+
 
 function bubble_integrator_block_init() {
     ?>
@@ -267,7 +268,7 @@ add_action('admin_footer', 'bubble_integrator_block_init');
 function bubble_integrator_enqueue_block_styles() {
     wp_enqueue_style(
         'bubble-integrator-block-styles',
-        plugins_url('css/bubble-integrator.css', __FILE__), 
+        plugins_url('css/bubbles.css', __FILE__), 
         array(), 
         '1.0.0' 
     );
