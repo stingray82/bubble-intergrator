@@ -1,0 +1,12 @@
+Allows you to add usebubbles.com videos embedded on your WordPress sites easily and quickly
+== Description ==
+
+Allows you to add usebubbles.com videos embedded on your WordPress sites easily and quickly
+
+== Installation ==
+
+1. Upload the `bubble-intergrator-block` folder to the `/wp-content/plugins/` directory.
+2. Go to a Guttenberg page you will now have a new block.
+3. use the configurator to modify the use bubbles embed
+
+== Frequently Asked Questions ==

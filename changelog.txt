@@ -1,0 +1,5 @@
+= 1.0 =
+Initial Release
+
+= 1.1 =
+Prep for Automatic Updates and Push version numbers
