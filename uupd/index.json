@@ -1,7 +1,7 @@
 {
     "slug": "bubble-intergrator",
     "name": "Bubble Integrator",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "author": "STINGRAY82",
     "author_homepage": "https://reallyusefulplugins.com",
     "requires_php": "8.0",
@@ -11,9 +11,9 @@
         "description": "Allows you to add usebubbles.com videos embedded on your WordPress sites easily and quickly",
         "installation": "1. Upload the `bubble-intergrator-block` folder to the `/wp-content/plugins/` directory.<br />\r\n2. Go to a Guttenberg page you will now have a new block.<br />\r\n3. use the configurator to modify the use bubbles embed",
         "frequently_asked_questions": "",
-        "changelog": "<h4>1.1.1 27 July 2025</h4><ul><li>New: Prepare Future Support for Preleases</li><li>New: Updated UUPD to 1.3.0</li></ul><h4>1.1</h4><ul><li>Prep for Automatic Updates and Push version numbers</li></ul><h4>1.0</h4><ul><li>Initial Release</li></ul>"
+        "changelog": "<h4>1.1.2 27 July 2025</h4><ul><li>New: Main WP Icon Filter</li></ul><h4>1.1.1 27 July 2025</h4><ul><li>New: Prepare Future Support for Preleases</li><li>New: Updated UUPD to 1.3.0</li></ul><h4>1.1</h4><ul><li>Prep for Automatic Updates and Push version numbers</li></ul><h4>1.0</h4><ul><li>Initial Release</li></ul>"
     },
-    "last_updated": "2025-07-27 16:00:48",
+    "last_updated": "2025-08-02 07:52:54",
     "download_url": "https://github.com/stingray82/bubble-intergrator/releases/latest/download/bubble-intergrator-block.zip",
     "banners": {
         "low": "https://raw.githubusercontent.com/stingray82/bubble-intergrator/main/uupd/banner-772x250.png",

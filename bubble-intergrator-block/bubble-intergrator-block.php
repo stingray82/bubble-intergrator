@@ -5,7 +5,7 @@
  * Tested up to:      6.8.2
  * Requires at least: 6.7
  * Requires PHP:      8.0
- * Version:           1.1.1
+ * Version:           1.1.2
  * Author:            STINGRAY82
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL-2.0-or-later
@@ -277,7 +277,7 @@ add_action('wp_enqueue_scripts', 'bubble_integrator_enqueue_block_styles');
 
 
 // Define plugin constants
-define('RUP_BUBBLE_INTERGRATOR_VERSION', '1.1.1');
+define('RUP_BUBBLE_INTERGRATOR_VERSION', '1.1.2');
 
 // ──────────────────────────────────────────────────────────────────────────
 //  Updater bootstrap (plugins_loaded priority 1):
@@ -299,3 +299,17 @@ add_action( 'plugins_loaded', function() {
     // 3) Call the helper in the UUPD\V1 namespace:
     \RUP\Updater\Updater_V1::register( $updater_config );
 }, 20 );
+
+
+
+
+// MainWP Icon Filter
+add_filter('mainwp_child_stats_get_plugin_info', function($info, $slug) {
+
+    if ('bubble-intergrator-block/bubble-intergrator-block.php' === $slug) {
+        $info['icon'] = 'https://raw.githubusercontent.com/stingray82/bubble-intergrator/main/uupd/icon-128.png'; // Supported types: jpeg, jpg, gif, ico, png
+    }
+
+    return $info;
+
+}, 10, 2);
