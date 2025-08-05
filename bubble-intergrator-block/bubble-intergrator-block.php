@@ -304,9 +304,6 @@ add_action( 'plugins_loaded', function() {
 
 
 // MainWP Icon Filter
-# Retain for Future use
-
-/* 
 add_filter('mainwp_child_stats_get_plugin_info', function($info, $slug) {
 
     if ('bubble-intergrator-block/bubble-intergrator-block.php' === $slug) {
@@ -316,5 +313,3 @@ add_filter('mainwp_child_stats_get_plugin_info', function($info, $slug) {
     return $info;
 
 }, 10, 2); 
-
-*/
