@@ -2,13 +2,23 @@
 setlocal enabledelayedexpansion
 
 REM ─────────────────────────────────────────────────────
+REM Programmically get the Directory Information
+REM ─────────────────────────────────────────────────────
+REM Get the directory the script is in
+SET "SCRIPT_DIR=%~dp0"
+REM Remove trailing backslash if it exists
+IF "%SCRIPT_DIR:~-1%"=="\" SET "SCRIPT_DIR=%SCRIPT_DIR:~0,-1%"
+REM Set PLUGIN_DIR relative to the script's directory
+SET "PLUGIN_DIR=%SCRIPT_DIR%\bubble-intergrator-block"
+REM Optional: remove trailing slash again if needed
+IF "%PLUGIN_DIR:~-1%"=="\" SET "PLUGIN_DIR=%PLUGIN_DIR:~0,-1%"
+REM Build the path to the plugin file
+REM ─────────────────────────────────────────────────────
 REM CONFIGURATION
 REM ─────────────────────────────────────────────────────
 SET "PLUIGN_NAME=Bubble Intergrator block"
 SET "PLUGIN_TAGS=UseBubbles, Video, Embed"
 SET "HEADER_SCRIPT=C:\Ignore By Avast\0. PATHED Items\Plugins\deployscripts\myplugin_headers.php"
-SET "PLUGIN_DIR=C:\Users\Nathan\Git\bubble-intergrator\bubble-intergrator-block"
-IF "%PLUGIN_DIR:~-1%"=="\" SET "PLUGIN_DIR=%PLUGIN_DIR:~0,-1%"
 SET "PLUGIN_FILE=%PLUGIN_DIR%\bubble-intergrator-block.php"
 SET "CHANGELOG_FILE=changelog.txt"
 SET "STATIC_FILE=static.txt"
@@ -29,6 +39,10 @@ SET "REPO_ROOT=%PLUGIN_DIR%\.."
 SET "STATIC_SUBFOLDER=%REPO_ROOT:\=\\%\uupd"
 
 REM Script Version 1.1
+REM Display results (for debugging)
+echo SCRIPT_DIR = %SCRIPT_DIR%
+echo PLUGIN_DIR = %PLUGIN_DIR%
+echo PLUGIN_FILE = %PLUGIN_FILE%
 
 REM ─────────────────────────────────────────────────────
 REM VERIFY REQUIRED FILES
