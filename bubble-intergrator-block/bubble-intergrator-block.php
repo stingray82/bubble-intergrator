@@ -5,7 +5,7 @@
  * Tested up to:      6.8.2
  * Requires at least: 6.7
  * Requires PHP:      8.0
- * Version:           1.1.4
+ * Version:           1.1.5
  * Author:            STINGRAY82
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL-2.0-or-later
@@ -277,7 +277,7 @@ add_action('wp_enqueue_scripts', 'bubble_integrator_enqueue_block_styles');
 
 
 // Define plugin constants
-define('RUP_BUBBLE_INTERGRATOR_VERSION', '1.1.4');
+define('RUP_BUBBLE_INTERGRATOR_VERSION', '1.1.5');
 
 // ──────────────────────────────────────────────────────────────────────────
 //  Updater bootstrap (plugins_loaded priority 1):
