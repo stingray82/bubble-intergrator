@@ -2,10 +2,10 @@
 /**
  * Plugin Name:       Bubble Integrator
  * Description:       A custom block to integrate Bubble iframe.
- * Tested up to:      6.8.2
+ * Tested up to:      6.9.4
  * Requires at least: 6.7
  * Requires PHP:      8.0
- * Version:           1.1.5
+ * Version:           1.1.6
  * Author:            STINGRAY82
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL-2.0-or-later
@@ -277,10 +277,10 @@ add_action('wp_enqueue_scripts', 'bubble_integrator_enqueue_block_styles');
 
 
 // Define plugin constants
-define('RUP_BUBBLE_INTERGRATOR_VERSION', '1.1.5');
+define('RUP_BUBBLE_INTERGRATOR_VERSION', '1.1.6');
 
 // ──────────────────────────────────────────────────────────────────────────
-//  Updater bootstrap (plugins_loaded priority 1):
+//  Updater bootstrap (plugins_loaded priority 20):
 // ──────────────────────────────────────────────────────────────────────────
 add_action( 'plugins_loaded', function() {
     // 1) Load our universal drop-in. Because that file begins with "namespace UUPD\V1;",
@@ -288,6 +288,7 @@ add_action( 'plugins_loaded', function() {
 
     // 2) Build a single $updater_config array:
     $updater_config = [
+    	'vendor'      => 'RUP',
         'plugin_file' => plugin_basename( __FILE__ ),             // e.g. "simply-static-export-notify/simply-static-export-notify.php"
         'slug'        => 'bubble-intergrator-block',           // must match your updater‐server slug
         'name'        => 'Bubble Intergrator block',         // human‐readable plugin name
@@ -296,8 +297,8 @@ add_action( 'plugins_loaded', function() {
         'server'      => 'https://raw.githubusercontent.com/stingray82/bubble-intergrator/main/uupd/index.json',
     ];
 
-    // 3) Call the helper in the UUPD\V1 namespace:
-    \RUP\Updater\Updater_V1::register( $updater_config );
+    // 3) Call the helper in the UUPD\V2 namespace:
+    \RUP\Updater\Updater_V2::register( $updater_config );
 }, 20 );
 
 

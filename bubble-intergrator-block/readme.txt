@@ -3,8 +3,8 @@ Contributors: reallyusefulplugins
 Donate link: https://reallyusefulplugins.com/donate
 Tags: UseBubbles, Video, Embed
 Requires at least: 6.7
-Tested up to: 6.8.2
-Stable tag: 1.1.5
+Tested up to: 6.9.4
+Stable tag: 1.1.6
 Requires PHP: 8.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -23,6 +23,11 @@ Allows you to add usebubbles.com videos embedded on your WordPress sites easily 
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.1.6 23 March 2026 =
+Update: Updater to 2.0-Alpha
+Update: Compatibility 
+
+
 = 1.1.5 12 August 2025 =
 New: Deploy Methodology 
 New: Production Test - New deploy.sh 
